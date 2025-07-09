@@ -1,5 +1,3 @@
-# Capstone-project
-
 # 🅿️ Dynamic Pricing for Urban Parking Lots
 
 ## 🚀 Overview
@@ -18,6 +16,7 @@ This was developed as part of the **Summer Analytics 2025 Capstone Project**.
 - **Pathway** – real-time data pipeline and dynamic pricing model implementation
 
 ---
+
 ## 🧱 Architecture Diagram
 
 ```mermaid
@@ -26,28 +25,3 @@ graph TD
     B --> C[Feature Engineering]
     C --> D[Dynamic Pricing Model using Pathway]
     D --> E[Output to Real-Time Dashboard or Log]
-
-
-
----
-
-## 🧠 Project Architecture & Workflow
-
-1. **Input Data**
-   - Parking logs, timestamps, and availability data are ingested (CSV or real-time sensors).
-
-2. **Preprocessing**
-   - Cleaned using `pandas` and `numpy`.
-   - Features like `hour_of_day`, `day_of_week`, `slot_occupancy_rate`, and `is_peak_hour` were added.
-
-3. **Feature Engineering**
-   - Lag features (previous hour's occupancy).
-   - Aggregated demand curves.
-   - Flags for event days or weekends.
-
-4. **Dynamic Pricing Model (Pathway)**
-   - Real-time logic evaluates demand and adjusts prices.
-   - Rules like surge pricing, max/min cap, time-based discounts are applied.
-
-5. **Output**
-   - Results can be published to dashboard/API or logged to CSV.
