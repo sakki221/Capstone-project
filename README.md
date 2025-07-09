@@ -21,12 +21,14 @@ This was developed as part of the **Summer Analytics 2025 Capstone Project**.
 
 ## 🧱 Architecture Diagram
 
+
 ```mermaid
 graph TD
     A[CSV Input / Sensor Data] --> B[Preprocessing with Pandas & NumPy]
     B --> C[Feature Engineering]
-    C --> D[Dynamic Pricing Model (Pathway)]
+    C --> D[Dynamic Pricing Model using Pathway]
     D --> E[Output to Real-Time Dashboard / Log]
+
 
 ---
 
